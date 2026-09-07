@@ -1,4 +1,11 @@
 @charset "UTF-8";
+:root {
+  --mark-bg-color: rgba(255, 208, 0, 0.4);
+  --a-color: #1a73e8;
+  --blockquote-border-left-color: rgb(200, 200, 200);
+  --list-color: rgb(175, 175, 175);
+}
+
 .post--p, .post--container p {
   --fw: 400;
   font-size: 1em;
@@ -11,7 +18,7 @@
   font-weight: calc(var(--fw) + 200);
 }
 .post--p mark, .post--container p mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--mark-bg-color);
 }
 .post--h1, .post--container h1 {
   --fw: 700;
@@ -25,7 +32,7 @@
   font-weight: calc(var(--fw) + 200);
 }
 .post--h1 mark, .post--container h1 mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--mark-bg-color);
 }
 .post--h2, .post--container h2 {
   --fw: 680;
@@ -39,7 +46,7 @@
   font-weight: calc(var(--fw) + 200);
 }
 .post--h2 mark, .post--container h2 mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--mark-bg-color);
 }
 .post--h3, .post--container h3 {
   --fw: 660;
@@ -53,7 +60,7 @@
   font-weight: calc(var(--fw) + 200);
 }
 .post--h3 mark, .post--container h3 mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--mark-bg-color);
 }
 .post--h4, .post--container h4 {
   --fw: 640;
@@ -67,7 +74,7 @@
   font-weight: calc(var(--fw) + 200);
 }
 .post--h4 mark, .post--container h4 mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--mark-bg-color);
 }
 .post--h5, .post--container h5 {
   --fw: 620;
@@ -81,7 +88,7 @@
   font-weight: calc(var(--fw) + 200);
 }
 .post--h5 mark, .post--container h5 mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--mark-bg-color);
 }
 .post--h6, .post--container h6 {
   --fw: 600;
@@ -95,19 +102,18 @@
   font-weight: calc(var(--fw) + 200);
 }
 .post--h6 mark, .post--container h6 mark {
-  background-color: rgba(255, 208, 0, 0.4);
+  background-color: var(--mark-bg-color);
 }
 .post--a, .post--container a {
-  --link-color: #1a73e8;
-  color: var(--link-color);
+  color: var(--a-color);
 }
 .post--a:hover, .post--container a:hover {
-  color: hsl(from var(--link-color) h s calc(l * 1.25));
+  color: hsl(from var(--a-color) h s calc(l * 1.25));
 }
 .post--blockquote, .post--container blockquote {
   margin: 0;
   padding-left: 24px;
-  border-left: 3px solid rgb(200, 200, 200);
+  border-left: 3px solid var(--blockquote-border-left-color);
 }
 .post--ul, .post--container ul {
   margin-top: 16px;
@@ -116,7 +122,7 @@
 }
 .post--ul > li::marker, .post--container ul > li::marker {
   content: "•   ";
-  color: rgb(175, 175, 175);
+  color: var(--list-color);
 }
 .post--ol, .post--container ol {
   margin-top: 16px;
@@ -124,7 +130,7 @@
   padding-left: 26px;
 }
 .post--ol > li::marker, .post--container ol > li::marker {
-  color: rgb(175, 175, 175);
+  color: var(--list-color);
 }
 .post--li, .post--container li {
   padding-top: 1.5px;
@@ -144,7 +150,7 @@
   position: absolute;
   content: "";
   left: -0.865em;
-  background-color: rgb(175, 175, 175);
+  background-color: var(--list-color);
   width: 0.5px;
   height: 100%;
 }/*# sourceMappingURL=post.css.map */
