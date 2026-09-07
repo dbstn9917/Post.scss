@@ -3,6 +3,7 @@
   --a-color: #1a73e8;
   --blockquote-border-left-color: rgb(200, 200, 200);
   --list-color: rgb(175, 175, 175);
+  --hr-color: rgb(200, 200, 200);
 }
 
 @mixin text($fs: 1em, $mt: 16px, $mb: 16px, $lh: 1.5, $fw: 400) {
@@ -91,6 +92,12 @@
       }
     }
   }
+  &--hr {
+    border: none;
+    border-top: 2px solid var(--hr-color);
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .post--container {
@@ -129,5 +136,8 @@
   }
   li {
     @extend .post--li;
+  }
+  hr {
+    @extend .post--hr;
   }
 }

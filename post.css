@@ -4,6 +4,7 @@
   --a-color: #1a73e8;
   --blockquote-border-left-color: rgb(200, 200, 200);
   --list-color: rgb(175, 175, 175);
+  --hr-color: rgb(200, 200, 200);
 }
 
 .post--p, .post--container p {
@@ -153,4 +154,10 @@
   background-color: var(--list-color);
   width: 0.5px;
   height: 100%;
+}
+.post--hr, .post--container hr {
+  border: none;
+  border-top: 2px solid var(--hr-color);
+  margin-top: 32px;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=post.css.map */
