@@ -123,50 +123,50 @@
   }
 }
 
-.post--container {
-  p {
+.post--container:not(.post--disable) {
+  p:not(.post--disable, .post--disable *) {
     @extend .post--p;
   }
-  h1 {
+  h1:not(.post--disable, .post--disable *) {
     @extend .post--h1;
   }
-  h2 {
+  h2:not(.post--disable, .post--disable *) {
     @extend .post--h2;
   }
-  h3 {
+  h3:not(.post--disable, .post--disable *) {
     @extend .post--h3;
   }
-  h4 {
+  h4:not(.post--disable, .post--disable *) {
     @extend .post--h4;
   }
-  h5 {
+  h5:not(.post--disable, .post--disable *) {
     @extend .post--h5;
   }
-  h6 {
+  h6:not(.post--disable, .post--disable *) {
     @extend .post--h6;
   }
-  a {
+  a:not(.post--disable, .post--disable *) {
     @extend .post--a;
   }
-  blockquote {
+  blockquote:not(.post--disable, .post--disable *) {
     @extend .post--blockquote;
   }
-  ul {
+  ul:not(.post--disable, .post--disable *) {
     @extend .post--ul;
   }
-  ol {
+  ol:not(.post--disable, .post--disable *) {
     @extend .post--ol;
   }
-  li {
+  li:not(.post--disable, .post--disable *) {
     @extend .post--li;
   }
-  hr {
+  hr:not(.post--disable, .post--disable *) {
     @extend .post--hr;
   }
-  code {
+  code:not(.post--disable, .post--disable *) {
     @extend .post--code;
   }
-  pre {
+  pre:not(.post--disable, .post--disable *) {
     @extend .post--pre;
   }
 }
