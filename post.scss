@@ -15,10 +15,10 @@
   margin-bottom: $mb;
   line-height: $lh;
   font-weight: var(--fw);
-  strong {
+  strong:not(.post--disable, .post--disable *) {
     font-weight: calc(var(--fw) + 200);
   }
-  mark {
+  mark:not(.post--disable, .post--disable *) {
     background-color: var(--mark-bg-color);
   }
 }

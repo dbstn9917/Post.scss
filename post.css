@@ -16,10 +16,10 @@
   line-height: 1.5;
   font-weight: var(--fw);
 }
-.post--p strong, .post--container:not(.post--disable) p:not(.post--disable, .post--disable *) strong {
+.post--p strong:not(.post--disable, .post--disable *), .post--container:not(.post--disable) p:not(.post--disable, .post--disable *) strong:not(.post--disable, .post--disable *) {
   font-weight: calc(var(--fw) + 200);
 }
-.post--p mark, .post--container:not(.post--disable) p:not(.post--disable, .post--disable *) mark {
+.post--p mark:not(.post--disable, .post--disable *), .post--container:not(.post--disable) p:not(.post--disable, .post--disable *) mark:not(.post--disable, .post--disable *) {
   background-color: var(--mark-bg-color);
 }
 .post--h1, .post--container:not(.post--disable) h1:not(.post--disable, .post--disable *) {
@@ -30,10 +30,10 @@
   line-height: 1.2;
   font-weight: var(--fw);
 }
-.post--h1 strong, .post--container:not(.post--disable) h1:not(.post--disable, .post--disable *) strong {
+.post--h1 strong:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h1:not(.post--disable, .post--disable *) strong:not(.post--disable, .post--disable *) {
   font-weight: calc(var(--fw) + 200);
 }
-.post--h1 mark, .post--container:not(.post--disable) h1:not(.post--disable, .post--disable *) mark {
+.post--h1 mark:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h1:not(.post--disable, .post--disable *) mark:not(.post--disable, .post--disable *) {
   background-color: var(--mark-bg-color);
 }
 .post--h2, .post--container:not(.post--disable) h2:not(.post--disable, .post--disable *) {
@@ -44,10 +44,10 @@
   line-height: 1.2;
   font-weight: var(--fw);
 }
-.post--h2 strong, .post--container:not(.post--disable) h2:not(.post--disable, .post--disable *) strong {
+.post--h2 strong:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h2:not(.post--disable, .post--disable *) strong:not(.post--disable, .post--disable *) {
   font-weight: calc(var(--fw) + 200);
 }
-.post--h2 mark, .post--container:not(.post--disable) h2:not(.post--disable, .post--disable *) mark {
+.post--h2 mark:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h2:not(.post--disable, .post--disable *) mark:not(.post--disable, .post--disable *) {
   background-color: var(--mark-bg-color);
 }
 .post--h3, .post--container:not(.post--disable) h3:not(.post--disable, .post--disable *) {
@@ -58,10 +58,10 @@
   line-height: 1.3;
   font-weight: var(--fw);
 }
-.post--h3 strong, .post--container:not(.post--disable) h3:not(.post--disable, .post--disable *) strong {
+.post--h3 strong:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h3:not(.post--disable, .post--disable *) strong:not(.post--disable, .post--disable *) {
   font-weight: calc(var(--fw) + 200);
 }
-.post--h3 mark, .post--container:not(.post--disable) h3:not(.post--disable, .post--disable *) mark {
+.post--h3 mark:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h3:not(.post--disable, .post--disable *) mark:not(.post--disable, .post--disable *) {
   background-color: var(--mark-bg-color);
 }
 .post--h4, .post--container:not(.post--disable) h4:not(.post--disable, .post--disable *) {
@@ -72,10 +72,10 @@
   line-height: 1.4;
   font-weight: var(--fw);
 }
-.post--h4 strong, .post--container:not(.post--disable) h4:not(.post--disable, .post--disable *) strong {
+.post--h4 strong:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h4:not(.post--disable, .post--disable *) strong:not(.post--disable, .post--disable *) {
   font-weight: calc(var(--fw) + 200);
 }
-.post--h4 mark, .post--container:not(.post--disable) h4:not(.post--disable, .post--disable *) mark {
+.post--h4 mark:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h4:not(.post--disable, .post--disable *) mark:not(.post--disable, .post--disable *) {
   background-color: var(--mark-bg-color);
 }
 .post--h5, .post--container:not(.post--disable) h5:not(.post--disable, .post--disable *) {
@@ -86,10 +86,10 @@
   line-height: 1.5;
   font-weight: var(--fw);
 }
-.post--h5 strong, .post--container:not(.post--disable) h5:not(.post--disable, .post--disable *) strong {
+.post--h5 strong:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h5:not(.post--disable, .post--disable *) strong:not(.post--disable, .post--disable *) {
   font-weight: calc(var(--fw) + 200);
 }
-.post--h5 mark, .post--container:not(.post--disable) h5:not(.post--disable, .post--disable *) mark {
+.post--h5 mark:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h5:not(.post--disable, .post--disable *) mark:not(.post--disable, .post--disable *) {
   background-color: var(--mark-bg-color);
 }
 .post--h6, .post--container:not(.post--disable) h6:not(.post--disable, .post--disable *) {
@@ -100,10 +100,10 @@
   line-height: 1.5;
   font-weight: var(--fw);
 }
-.post--h6 strong, .post--container:not(.post--disable) h6:not(.post--disable, .post--disable *) strong {
+.post--h6 strong:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h6:not(.post--disable, .post--disable *) strong:not(.post--disable, .post--disable *) {
   font-weight: calc(var(--fw) + 200);
 }
-.post--h6 mark, .post--container:not(.post--disable) h6:not(.post--disable, .post--disable *) mark {
+.post--h6 mark:not(.post--disable, .post--disable *), .post--container:not(.post--disable) h6:not(.post--disable, .post--disable *) mark:not(.post--disable, .post--disable *) {
   background-color: var(--mark-bg-color);
 }
 .post--a, .post--container:not(.post--disable) a:not(.post--disable, .post--disable *) {
