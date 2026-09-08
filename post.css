@@ -5,6 +5,7 @@
   --blockquote-border-left-color: rgb(200, 200, 200);
   --list-color: rgb(175, 175, 175);
   --hr-color: rgb(200, 200, 200);
+  --code-bg-color: rgb(245, 245, 245);
 }
 
 .post--p, .post--container p {
@@ -160,4 +161,12 @@
   border-top: 2px solid var(--hr-color);
   margin-top: 32px;
   margin-bottom: 32px;
+}
+.post--code, .post--container code {
+  font-family: "Cascadia Mono", monospace;
+  font-size: 0.875em;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.15em 0.3em;
+  background-color: var(--code-bg-color);
 }/*# sourceMappingURL=post.css.map */
