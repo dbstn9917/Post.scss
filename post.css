@@ -169,4 +169,18 @@
   border-radius: 4px;
   padding: 0.15em 0.3em;
   background-color: var(--code-bg-color);
+}
+.post--pre, .post--container pre {
+  padding: 12px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: var(--code-bg-color);
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+.post--pre code, .post--container pre code {
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
 }/*# sourceMappingURL=post.css.map */
