@@ -5,6 +5,7 @@
   --blockquote-border-left-color: rgb(200, 200, 200);
   --list-color: rgb(175, 175, 175);
   --hr-color: rgb(200, 200, 200);
+  --code-bg-color: rgb(245, 245, 245);
 }
 
 .post--p, .post--container p {
@@ -160,4 +161,26 @@
   border-top: 2px solid var(--hr-color);
   margin-top: 32px;
   margin-bottom: 32px;
+}
+.post--code, .post--container code {
+  font-family: "Cascadia Mono", monospace;
+  font-size: 0.875em;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.15em 0.3em;
+  background-color: var(--code-bg-color);
+}
+.post--pre, .post--container pre {
+  padding: 12px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: var(--code-bg-color);
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+.post--pre code, .post--container pre code {
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
 }/*# sourceMappingURL=post.css.map */
