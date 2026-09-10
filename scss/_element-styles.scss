@@ -1,0 +1,129 @@
+@mixin text-style($fs: 1em, $fw: 400, $lh: 1.5, $mt: 1rem, $mb: 1rem) {
+  --fw: #{$fw};
+
+  font-size: $fs;
+  font-weight: var(--fw);
+  line-height: $lh;
+  margin-top: $mt;
+  margin-bottom: $mb;
+}
+
+%post-p {
+  @include text-style;
+}
+
+%post-h1 {
+  @include text-style($fs: 1.625em, $fw: 700, $lh: 1.2, $mt: 2.5rem);
+}
+
+%post-h2 {
+  @include text-style($fs: 1.5em, $fw: 680, $lh: 1.2, $mt: 2.5rem);
+}
+
+%post-h3 {
+  @include text-style($fs: 1.375em, $fw: 660, $lh: 1.3, $mt: 2.5rem);
+}
+
+%post-h4 {
+  @include text-style($fs: 1.25em, $fw: 640, $lh: 1.4, $mt: 2.5rem);
+}
+
+%post-h5 {
+  @include text-style($fs: 1.125em, $fw: 620, $mt: 2.5rem);
+}
+
+%post-h6 {
+  @include text-style($fw: 600, $mt: 2.5rem);
+}
+
+%post-strong {
+  font-weight: calc(var(--fw) + 200);
+}
+
+%post-mark {
+  background-color: var(--mark-bg-color);
+}
+
+%post-a {
+  color: var(--a-color);
+
+  &:hover {
+    color: hsl(from var(--a-color) h s calc(l * 1.25));
+  }
+}
+
+%post-blockquote {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--blockquote-border-left-color);
+}
+
+%post-ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.625em;
+  > li:not(.post--disable, .post--disable *)::marker {
+    content: "•   ";
+    color: var(--list-color);
+  }
+}
+
+%post-ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.625em;
+  > li:not(.post--disable, .post--disable *)::marker {
+    color: var(--list-color);
+  }
+}
+
+%post-li {
+  padding-top: 0.075rem;
+  padding-bottom: 0.075rem;
+  ul:not(.post--disable, .post--disable *),
+  ol:not(.post--disable, .post--disable *) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 2.25em;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      left: -0.865em;
+      background-color: var(--list-color);
+      width: 0.025em;
+      height: 100%;
+    }
+  }
+}
+
+%post-hr {
+  border: none;
+  border-top: 2px solid var(--hr-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+%post-code {
+  font-family: "Cascadia Mono", monospace;
+  font-size: 0.875em;
+  box-sizing: border-box;
+  border-radius: 0.25em;
+  padding: 0.15em 0.3em;
+  background-color: var(--code-bg-color);
+}
+
+%post-pre {
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--code-bg-color);
+  white-space: pre-wrap;
+  overflow-x: auto;
+  code {
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}

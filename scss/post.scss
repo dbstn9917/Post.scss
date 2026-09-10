@@ -1,0 +1,52 @@
+@use "properties";
+@use "element-styles";
+
+@mixin container-em($em-name) {
+  #{$em-name}:not(.post--disable, .post--disable *) {
+    @extend %post-#{$em-name};
+  }
+}
+
+@mixin inline-em($em-name) {
+  .post--#{$em-name}:not(.post--disable, .post--disable *) {
+    @extend %post-#{$em-name};
+  }
+}
+
+.post--container:not(.post--disable) {
+  @include container-em(p);
+  @include container-em(h1);
+  @include container-em(h2);
+  @include container-em(h3);
+  @include container-em(h4);
+  @include container-em(h5);
+  @include container-em(h6);
+  @include container-em(strong);
+  @include container-em(mark);
+  @include container-em(a);
+  @include container-em(blockquote);
+  @include container-em(ol);
+  @include container-em(ul);
+  @include container-em(li);
+  @include container-em(hr);
+  @include container-em(code);
+  @include container-em(pre);
+}
+
+@include inline-em(p);
+@include inline-em(h1);
+@include inline-em(h2);
+@include inline-em(h3);
+@include inline-em(h4);
+@include inline-em(h5);
+@include inline-em(h6);
+@include inline-em(strong);
+@include inline-em(mark);
+@include inline-em(a);
+@include inline-em(blockquote);
+@include inline-em(ol);
+@include inline-em(ul);
+@include inline-em(li);
+@include inline-em(hr);
+@include inline-em(code);
+@include inline-em(pre);
