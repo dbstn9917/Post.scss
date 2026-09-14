@@ -1,8 +1,13 @@
 :root {
+  --gray-1: rgba(0, 0, 0, 0.1);
+  --gray-2: rgba(0, 0, 0, 0.2);
+  --gray-3: rgba(0, 0, 0, 0.3);
+
   --mark-bg-color: rgba(255, 208, 0, 0.4);
   --a-color: #1a73e8;
-  --blockquote-border-left-color: rgb(200, 200, 200);
-  --list-color: rgb(175, 175, 175);
-  --hr-color: rgb(200, 200, 200);
-  --code-bg-color: rgb(245, 245, 245);
+  --blockquote-border-left-color: var(--gray-2);
+  --list-marker-color: var(--gray-3);
+  --list-nesting-guide-color: var(--gray-1);
+  --hr-color: var(--gray-2);
+  --code-bg-color: rgba(0, 0, 0, 0.05);
 }

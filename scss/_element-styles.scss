@@ -64,7 +64,8 @@
   padding-left: 1.625em;
   > li:not(.post--disable, .post--disable *)::marker {
     content: "•   ";
-    color: var(--list-color);
+    color: var(--list-marker-color);
+    font-weight: 500;
   }
 }
 
@@ -73,7 +74,8 @@
   margin-bottom: 1rem;
   padding-left: 1.625em;
   > li:not(.post--disable, .post--disable *)::marker {
-    color: var(--list-color);
+    color: var(--list-marker-color);
+    font-weight: 500;
   }
 }
 
@@ -89,9 +91,9 @@
     &::before {
       position: absolute;
       content: "";
-      left: -0.865em;
-      background-color: var(--list-color);
-      width: 0.025em;
+      left: -0.89em;
+      background-color: var(--list-nesting-guide-color);
+      width: 0.0625em;
       height: 100%;
     }
   }
