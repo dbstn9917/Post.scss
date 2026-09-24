@@ -162,7 +162,7 @@
   margin-bottom: 1rem;
   border-radius: 0.25rem;
   background-color: var(--code-bg-color);
-  white-space: pre-wrap;
+  white-space: pre;
   overflow-x: auto;
 }
 .post--container:not(.post--disable) pre:not(.post--disable, .post--disable *) code, .post--pre:not(.post--disable, .post--disable *) code {
