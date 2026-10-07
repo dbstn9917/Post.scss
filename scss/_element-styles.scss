@@ -123,7 +123,7 @@
   background-color: var(--code-bg-color);
   white-space: pre;
   overflow-x: auto;
-  code {
+  code:not(.post--disable, .post--disable *) {
     border-radius: 0;
     padding: 0;
     background-color: transparent;

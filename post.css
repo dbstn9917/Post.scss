@@ -165,7 +165,7 @@
   white-space: pre;
   overflow-x: auto;
 }
-.post--container:not(.post--disable) pre:not(.post--disable, .post--disable *) code, .post--pre:not(.post--disable, .post--disable *) code {
+.post--container:not(.post--disable) pre:not(.post--disable, .post--disable *) code:not(.post--disable, .post--disable *), .post--pre:not(.post--disable, .post--disable *) code:not(.post--disable, .post--disable *) {
   border-radius: 0;
   padding: 0;
   background-color: transparent;
