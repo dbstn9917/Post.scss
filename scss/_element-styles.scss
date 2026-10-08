@@ -41,7 +41,7 @@
 }
 
 %post-strong {
-  font-weight: calc(var(--fw) + 200);
+  font-weight: calc(var(--font-weight) + 200);
 }
 
 %post-mark {
@@ -57,47 +57,44 @@
 }
 
 %post-blockquote {
-  margin: 1rem 0;
-  padding-left: 1.5rem;
+  margin-block: var(--global-rem);
+  margin-inline: 0;
+  padding-inline-start: calc(var(--global-rem) * 1.5);
   border-left: 3px solid var(--blockquote-border-left-color);
 }
 
 %post-ul {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1.625em;
+  margin-block: var(--global-rem);
+  padding-inline-start: calc(var(--global-em) * 1.625);
   > li:not(.post--disable, .post--disable *)::marker {
     content: "•   ";
     color: var(--list-marker-color);
-    font-weight: 500;
+    font-weight: calc(var(--global-font-weight) + 100);
   }
 }
 
 %post-ol {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1.625em;
+  margin-block: var(--global-rem);
+  padding-inline-start: calc(var(--global-em) * 1.625);
   > li:not(.post--disable, .post--disable *)::marker {
     color: var(--list-marker-color);
-    font-weight: 500;
+    font-weight: calc(var(--global-font-weight) + 100);
   }
 }
 
 %post-li {
-  padding-top: 0.075rem;
-  padding-bottom: 0.075rem;
+  padding-block: calc(var(--global-rem) * 0.075);
   ul:not(.post--disable, .post--disable *),
   ol:not(.post--disable, .post--disable *) {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 2.25em;
+    margin-block: 0;
+    padding-inline-start: calc(var(--global-em) * 2.25);
     position: relative;
     &::before {
       position: absolute;
       content: "";
-      left: -0.89em;
+      left: calc(var(--global-em) * -0.89);
       background-color: var(--list-nesting-guide-color);
-      width: 0.0625em;
+      width: calc(var(--global-em) * 0.0625);
       height: 100%;
     }
   }
