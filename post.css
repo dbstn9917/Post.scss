@@ -126,14 +126,14 @@
 }
 
 .post--container:not(.post--disable) blockquote:not(.post--disable, .post--disable *), .post--blockquote:not(.post--disable, .post--disable *) {
-  margin-block: var(--global-rem);
+  margin-block: var(--global-margin-block-start) var(--global-margin-block-end);
   margin-inline: 0;
   padding-inline-start: calc(var(--global-rem) * 1.5);
   border-left: 3px solid var(--blockquote-border-left-color);
 }
 
 .post--container:not(.post--disable) ul:not(.post--disable, .post--disable *), .post--ul:not(.post--disable, .post--disable *) {
-  margin-block: var(--global-rem);
+  margin-block: var(--global-margin-block-start) var(--global-margin-block-end);
   padding-inline-start: calc(var(--global-em) * 1.625);
 }
 .post--container:not(.post--disable) ul:not(.post--disable, .post--disable *) > li:not(.post--disable, .post--disable *)::marker, .post--ul:not(.post--disable, .post--disable *) > li:not(.post--disable, .post--disable *)::marker {
@@ -143,7 +143,7 @@
 }
 
 .post--container:not(.post--disable) ol:not(.post--disable, .post--disable *), .post--ol:not(.post--disable, .post--disable *) {
-  margin-block: var(--global-rem);
+  margin-block: var(--global-margin-block-start) var(--global-margin-block-end);
   padding-inline-start: calc(var(--global-em) * 1.625);
 }
 .post--container:not(.post--disable) ol:not(.post--disable, .post--disable *) > li:not(.post--disable, .post--disable *)::marker, .post--ol:not(.post--disable, .post--disable *) > li:not(.post--disable, .post--disable *)::marker {
@@ -175,24 +175,26 @@
 .post--container:not(.post--disable) hr:not(.post--disable, .post--disable *), .post--hr:not(.post--disable, .post--disable *) {
   border: none;
   border-top: 2px solid var(--hr-color);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-block: calc(var(--global-margin-block-start) * 2) calc(var(--global-margin-block-end) * 2);
 }
 
 .post--container:not(.post--disable) code:not(.post--disable, .post--disable *), .post--code:not(.post--disable, .post--disable *) {
   font-family: "Cascadia Mono", monospace;
-  font-size: 0.875em;
+  font-size: calc(var(--global-em) * 0.875);
   box-sizing: border-box;
-  border-radius: 0.25em;
-  padding: 0.15em 0.3em;
+  border-radius: calc(var(--global-em) * 0.25);
+  padding-block: calc(var(--global-em) * 0.15);
+  padding-inline: calc(var(--global-em) * 0.3);
   background-color: var(--code-bg-color);
 }
 
 .post--container:not(.post--disable) pre:not(.post--disable, .post--disable *), .post--pre:not(.post--disable, .post--disable *) {
-  padding: 0.75rem 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 0.25rem;
+  font-family: "Cascadia Mono", monospace;
+  box-sizing: border-box;
+  padding-block: calc(var(--global-rem) * 0.75);
+  padding-inline: var(--global-rem);
+  margin-block: var(--global-margin-block-start) var(--global-margin-block-end);
+  border-radius: calc(var(--global-rem) * 0.25);
   background-color: var(--code-bg-color);
   white-space: pre;
   overflow-x: auto;
