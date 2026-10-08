@@ -30,7 +30,7 @@ Post.scss로 적용한 **Post 스타일**은 다음의 특징을 갖고 있습�
 </div>
 ```
 
-## inline Post class
+## Inline Post class
 
 `post--container` 외부에서도 특정 요소에 Post 스타일을 적용할 수 있습니다.
 
@@ -53,6 +53,11 @@ Post.scss로 적용한 **Post 스타일**은 다음의 특징을 갖고 있습�
 ```
 
 `post--disable` 클래스가 부여된 요소의 하위 요소 또한 Post 스타일이 비활성화됩니다.
+
+## 더 알아보기
+
+- [Post 요소](docs/post-element.md)
+- [커스텀 프로퍼티](docs/custom-properties.md)
 
 ## Copyright
 
