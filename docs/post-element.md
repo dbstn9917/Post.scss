@@ -1,7 +1,7 @@
 # Post 요소
 
 Post.scss는 WHATWG의 **HTML 표준**을 준수하는 문서에서 올바르게 작동할 수 있습니다.  
-올바르게 작성된 문서의 예시는 [index.html](index.html)을 확인해 보세요.  
+올바르게 작성된 문서의 예시는 [index.html](../index.html)을 확인해 보세요.  
 이 페이지에서는 Post 요소의 종류와 올바른 작성 방법을 알아보겠습니다.
 
 ## Paragraph
