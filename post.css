@@ -1,5 +1,12 @@
 @charset "UTF-8";
 :root {
+  --global-em: 1em;
+  --global-rem: 1rem;
+  --global-font-size: var(--em);
+  --global-font-weight: 400;
+  --global-line-height: 1.5;
+  --global-margin-block-start: var(--rem);
+  --global-margin-block-end: var(--rem);
   --gray-1: rgba(0, 0, 0, 0.1);
   --gray-2: rgba(0, 0, 0, 0.2);
   --gray-3: rgba(0, 0, 0, 0.3);

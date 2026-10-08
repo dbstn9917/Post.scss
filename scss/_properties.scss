@@ -1,13 +1,30 @@
 :root {
+  // global size
+  --global-em: 1em;
+  --global-rem: 1rem;
+
+  // global text style
+  --global-font-size: var(--em);
+  --global-font-weight: 400;
+  --global-line-height: 1.5;
+  --global-margin-block-start: var(--rem);
+  --global-margin-block-end: var(--rem);
+
+  // color
   --gray-1: rgba(0, 0, 0, 0.1);
   --gray-2: rgba(0, 0, 0, 0.2);
   --gray-3: rgba(0, 0, 0, 0.3);
 
   --mark-bg-color: rgba(255, 208, 0, 0.4);
+
   --a-color: #1a73e8;
+
   --blockquote-border-left-color: var(--gray-2);
+
   --list-marker-color: var(--gray-3);
   --list-nesting-guide-color: var(--gray-1);
+
   --hr-color: var(--gray-2);
+
   --code-bg-color: rgba(0, 0, 0, 0.05);
 }
