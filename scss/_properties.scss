@@ -4,11 +4,11 @@
   --global-rem: 1rem;
 
   // global text style
-  --global-font-size: var(--em);
+  --global-font-size: var(--global-em);
   --global-font-weight: 400;
   --global-line-height: 1.5;
-  --global-margin-block-start: var(--rem);
-  --global-margin-block-end: var(--rem);
+  --global-margin-block-start: var(--global-rem);
+  --global-margin-block-end: var(--global-rem);
 
   // color
   --gray-1: rgba(0, 0, 0, 0.1);
