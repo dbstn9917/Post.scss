@@ -48,3 +48,39 @@ Post.scss는 WHATWG의 **HTML 표준**을 준수하는 문서에서 올바르게
 ```
 
 제목은 1부터 6까지 총 **6단계**로 구분됩니다.
+
+## Text Formatting
+
+**텍스트 서식 요소**는 `<p>` 태그 같은 텍스트를 포함하는 요소 내부에서 사용할 수 있습니다.
+
+### Bold
+
+```html
+<p>이것은 <strong>bold</strong> 입니다.</p>
+```
+
+`<strong>` 태그를 이용하면 **볼드** 처리할 수 있습니다.
+
+### Italic
+
+```html
+<p>이것은 <em>italic</em> 입니다.</p>
+```
+
+`<em>` 태그를 이용하면 **이탤릭** 처리할 수 있습니다.
+
+### Strikethrough
+
+```html
+<p>이것은 <del>strikethrough</del> 입니다.</p>
+```
+
+`<del>` 태그를 이용하면 **취소선** 처리할 수 있습니다.
+
+### Highlight
+
+```html
+<p>이것은 <mark>highlight</mark> 입니다.</p>
+```
+
+`<mark>` 태그를 이용하면 **하이라이트** 처리할 수 있습니다.
