@@ -1,7 +1,8 @@
 # Post 요소
 
 Post.scss는 WHATWG의 **HTML 표준**을 준수하는 문서에서 올바르게 작동할 수 있습니다.  
-올바르게 작성된 문서의 예시는 [index.html](../index.html)을 확인해 보세요.  
+올바르게 작성된 문서의 예시는 [index.html](../index.html)을 확인해 보세요.
+
 이 페이지에서는 Post 요소의 종류와 올바른 작성 방법을 알아보겠습니다.
 
 ## Paragraph
@@ -10,7 +11,7 @@ Post.scss는 WHATWG의 **HTML 표준**을 준수하는 문서에서 올바르게
 <p>이것은 paragraph 입니다.</p>
 ```
 
-`<p>` 태그는 문단을 작성할 때 사용합니다.
+`<p>` 태그는 **문단**을 작성할 때 사용합니다.
 
 ```html
 <p>줄바꿈이 필요한 경우<br />이렇게 하시면 됩니다.</p>
@@ -26,5 +27,24 @@ Post.scss는 WHATWG의 **HTML 표준**을 준수하는 문서에서 올바르게
 각 문단 간의 간격은 `1rem`입니다.
 
 > [!NOTE]
-> 대부분의 Post 요소는 `1rem`의 상하 margin을 갖고 있습니다.  
+> 대부분의 Post 요소는 `1rem`의 **상하 margin**을 갖고 있습니다.  
 > [커스텀 프로퍼티](custom-properties.md)를 이용하면 모든 Post 요소에 적용된 상하 margin을 일괄적으로 수정할 수 있습니다.
+
+## Heading
+
+```html
+<h1>이것은 heading 입니다.</h1>
+```
+
+`<h1>` ~ `<h6>` 태그는 **제목**을 작성할 때 사용합니다.
+
+```html
+<h1>이것은 heading 1 입니다.</h1>
+<h2>이것은 heading 2 입니다.</h2>
+<h3>이것은 heading 3 입니다.</h3>
+<h4>이것은 heading 4 입니다.</h4>
+<h5>이것은 heading 5 입니다.</h5>
+<h6>이것은 heading 6 입니다.</h6>
+```
+
+제목은 1부터 6까지 총 **6단계**로 구분됩니다.
